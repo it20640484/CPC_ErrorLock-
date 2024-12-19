@@ -1,0 +1,77 @@
+Laravel PHP Framework Tutorial - Full Course for Beginners | Build a Blog with Laravel - https://www.youtube.com/watch?v=EcYXsp78Xy8&t=796s
+bootstrap code                                                                         - https://getbootstrap.com/docs/5.3/components/buttons/#base-class
+2023.10.18                                                                             - https://www.youtube.com/watch?v=Jw386THAXQU
+E mail verification                                                                    - https://www.youtube.com/watch?v=5hJRU2Xlz8c
+Edit Profile code                                                                      - https://www.bootdey.com/snippets/view/Edit-profile-page
+                                                                                         https://www.bootdey.com/snippets/tagged/edit+profile
+larave confirm message                                                                 - https://www.youtube.com/@StudentTutorialdotcom/videos
+
+
+https://www.canva.com/design/DAF22qj1RB0/FPQYoXE-po7Hr2Tg-WEPhQ/edit?referrer=resumes-landing-page - cv collection
+
+
+
+
+  <div class="row mb-2">
+                                                                   <label for="epfno" class="col-md-4 col-form-label text-md-end">{{ __('EPF No') }}</label>
+                                                                    <div class="col-md-7">
+                                                                       <input id="epfno" type="epfno" class="form-control @error('epfno') is-invalid @enderror" placeholder="Must not be greater than 6 character" name="epfno" value="{{ old('epfno') }}" required autocomplete="name" autofocus>
+                                                                       @error('epfno')
+                                                                        <span class="invalid-feedback" role="alert">
+                                                                           <strong>{{ $message }}</strong>
+                                                                        </span>
+                                                                        @enderror
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="row mb-2">
+                            <label for="floatingName" class="col-md-4 col-form-label text-md-end">{{ __('Username') }}</label>
+
+                            <div class="col-md-7">
+                                <input id="username" type="text" class="form-control @error('username') is-invalid @enderror" name="username" value="{{ old('username') }}" required autocomplete="required" autofocus>
+
+                                @error('username')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                                                                <div class="row mb-2">
+                                                                   <label for="floatingName" class="col-md-4 col-form-label text-md-end">{{ __('Fullname') }}</label>
+                                                                    <div class="col-md-7">
+                                                                       <input id="fullname" type="text" class="form-control @error('fullname') is-invalid @enderror" name="fullname" value="{{ old('fullname') }}" required autocomplete="name" autofocus>
+                                                                       @error('fullname')
+                                                                        <span class="invalid-feedback" role="alert">
+                                                                           <strong>{{ $message }}</strong>
+                                                                        </span>
+                                                                        @enderror
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="row mb-2">
+                                                                   <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email') }}</label>
+                                                                   <div class="col-md-7">
+                                                                        <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+                                                                        @error('email')
+                                                                        <span class="invalid-feedback" role="alert">
+                                                                            <strong>{{ $message }}</strong>
+                                                                        </span>
+                                                                        @enderror
+                                                                    </div>
+                                                                </div>
+
+                        <div class="row mb-2">
+                            <label for="contactno" class="col-md-4 col-form-label text-md-end">{{ __('Contact No') }}</label>
+
+                            <div class="col-md-7">
+                                <input id="contactno" type="contactno" class="form-control @error('contactno') is-invalid @enderror" name="contactno" value="{{ old('contactno') }}" required autocomplete="contactno">
+
+                                @error('contactno')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
